@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+{% load staticfiles %}
+<head>
+  <title>About me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Gallery</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{% static "image2.jpg" %}" alt="Los Angeles" height="220" width="1150" >
+      </div>
+
+      <div class="item">
+        <img src="{% static "image3.jpg" %}" alt="Chicago" width="1150" height="220">
+      </div>
+
+      <div class="item">
+        <img src="{% static "image5.jpg" %}" alt="New york" width="1150" height="220">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+ <br>
+  <br>
+<div align="center"><p><b>Shashwat Jain</b></p></div>
+<div align="center"><p>Email:shashwat17103@iiitd.ac.in</p></div>
+<div align="center"><p>Address-L-83, Windsor Park, Indirapuram, Ghaziabad</p></div>
+<div align="center"><p>Mobile number :+91 9999831953</p></div>
+
+<div align="center"><a href="https:github.com/Shashwat777">GitHub Profile</a>
+</div>
+<br>
+<br>
+<div align="center"><p><i>Seeking an internship position that provides ample opportunity to develop problem-solving skills and advance my abilities in the computer science field.</i></p></div>
+<div align="center"><p><b> — CORE TECHNICAL SKILLS — </b></p></div>
+<div align="center"><p><b><li>Python</li>                         <li>Awk</li>                      <li>Java</li>                      <li>Django</li>   <li>MySQL</li>    <li>JavaFx</li></b> </p></div>
+
+<h3>EDUCATION</h3>
+<p><b>Indraprastha Institute of Information and Technology (IIIT), Delhi 2017 - Present</b> </p>
+<p><i>Bachelor of Technology, Computer Science</i> </p>
+
+<p><b>Amity International School, Mayur Vihar, Delhi</b> </p>
+<p><i>CBSE – 91.75%</i> </p>
+
+<p><b>Kothari International School, Noida, UP</b> </p>
+<p><i>CBSE – CGPA 10</i> </p>
+
+<h3>Projects</h3>
+<h4><b><u>Completed Projects</u></b></h4>
+<p><b>Brain body weight:</b> Developed program to predict an animal's body weight given its brain weight using linear regression model</p>
+<p><b>Lamp: </b>Led development of a multifunctional lamp operational through an android application and hand gestures using near field-communication protocols. The lamp would automatically turn on when an object is in front of it and turned off upon removing the object, the lamp could be lit in multiple colours, this could be controlled from the android application.
+</body>
+</p>
+<p><b>Superstore management system:</b> Spearheaded the design and development of a flexible and intelligent management system for a Superstore. The Superstore has multiple warehouses and a chain of stores located in different cities and towns. One or more stores are linked to a warehouse. The linked warehouse ships items to stores on requirement basis as stores have limited space to stock items. The warehouses in turn fulfil the order of stores from their inventoried items or can seek help from another warehouse. Additionally, a warehouse also keeps track of its inventoried items. Both warehouses and stores are identified by id and name.</p>
+<p><b>Reading data using metadata file:</b> Physical data independence has to do with storage of data in hard disk. Now how this data is stored at disk sector, segment or in file. Database allows independence from these details. This project required to assume that you have data stored in a file where files have been structured at two levels. One that explains the structure of table and the other that has the data. Say table has 3 fields - id, name & address. A program accessing the data needs to know the file structure, which is implemented in any database system.</p>
+<p><b>Shell Implementation:</b> Implemented a basic shell. Our shell implementation did not execute the existing shell program. We build these functionalities by ourselves (using fork, exec, wait, etc.). By default, the shell program waits for user input from the stdin. After the user enters some command, the shell program parsed the input to interpret I/O redirection, pipe, etc. After, interpreting the command as described the shell program again waits for user input until the user enters the exit command. The program even handled nested commands like “cat /bin/ls | sort | uniq | wc -l 2>&1 1>output.txt”.</p>
+<p><b>Implementing Demand paging in xv6: </b>The goal of this assignment was to understand the paging subsystem of an operating system.
+The first component was to implement is demand paging. Demand paging lazily maps a physical page corresponding to a virtual page
+during the time of dereferencing. In addition to demand paging, implemented swapping. If the system runs out of physical memory,
+then the swapping subsystem reuse an already used physical page by saving its contents to secondary storage (e.g., disk). </p>
+<p><b>Extending thread system(Pintos):</b> In this project, we were given a minimally functional thread system. our job was to extend the functionality of this system to gain a better understanding of synchronization problems. We worked primarily in the “threads” directory for this project, with some work in the “devices” directory on the side.</p>
+<p><b>studying the use of new media in environmental activism: </b>Researched the intersection of new media technologies with changing
+social context of environmental movements and social activism in Delhi. To get a practical understanding of the changing sociology of
+new media, and how rise of the internet and mobile phones is reshaping activism and society at large.</p>
+<h3><b><u>Inflight Projects</u></b></h3>
+<p><b>Food order Application: Developing a food delivery application using android studio and firebase. The project is yet to be
+completed.</b></p>
+<p><b>DBMS application for Political parties:</b> The application will involve simulating the data comprising of the data such as what they would
+issues they would like their representative to address, the issues they think are useless to be addressed, the answers to the question
+such how much does the academic qualification of the candidate matters to them , will they prefer the candidate of their respective
+cast/ religion , are they satisfied by their current representative, which party they think is best for all .The data will be segregated into
+multiple dataset on the basis of factors like age , gender , profession , religion and user can also add multiple factors segregate the
+data as input. The application can be used by multiple parties. The objective of this application is that the parties get the right feedback
+to place their candidates while on the other hand as the result of this voter gets better options. Expected project completion date
+6/2019</p>
+<h3>Interests</h3>
+<p><b>Technical:</b><i> Machine learning, Android Development, Data Science, Data Analysis, Internet of things, Augmented reality, Backend
+development, Sociology of new media and sentiment analysis.</i></p>
+</html>
+{% endblock %}
